@@ -13,4 +13,4 @@ RUN python3 -m virtualenv -p /usr/bin/python3 --system-site-packages /var/www/sh
 RUN /var/www/shoop/venv/bin/pip install /var/www/shoop/working_copy
 RUN /var/www/shoop/venv/bin/python -m shoop_workbench migrate
 RUN /var/www/shoop/venv/bin/python -m shoop_workbench shoop_populate_mock --with-superuser=admin
-CMD /var/www/shoop/venv/bin/python -m shoop_workbench runserver 0:8080
+CMD /var/www/shoop/venv/bin/python -m shoop_workbench runserver 0:9090
