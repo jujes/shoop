@@ -1,6 +1,7 @@
 FROM node:0.12.5
 MAINTAINER Aarni Koskela <aarni.koskela@shoop.io>
 EXPOSE 8080
+EXPOSE 9090
 ADD . /var/www/shoop/working_copy
 
 RUN apt-get update && \
